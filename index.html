@@ -2,29 +2,114 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ISEEFOOD - Seafood Map</title>
-  <link rel="stylesheet" href="style/style.css" />
+  <title>ISEEFOOD - Landing Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to bottom, #e0f7fa, #b2ebf2);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #006064;
+      color: white;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    header img {
+      height: 60px;
+      border-radius: 8px;
+    }
+
+    header h1 {
+      font-size: 2rem;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    main h2 {
+      font-size: 2rem;
+      color: #004d40;
+      margin-bottom: 10px;
+    }
+
+    main p {
+      font-size: 1.1rem;
+      color: #006064;
+      margin-bottom: 30px;
+    }
+
+    .button-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+
+    .button-group a {
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 10px;
+      background-color: #00796b;
+      color: white;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .button-group a:hover {
+      background-color: #004d40;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #004d40;
+      color: white;
+      padding: 15px;
+    }
+  </style>
 </head>
 <body>
+
   <header>
-    <h1>Welcome to ISEEFOOD</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="map.html">Map</a>
-      <a href="contact.html">Contact</a>
-      <a href="login.html">Login</a>
-    </nav>
+    <img src="images/logo.jpg" alt="ISEEFOOD Logo" />
+    <h1>ISEEFOOD</h1>
   </header>
 
   <main>
-    <h2>Discover Seafood in Caraga Region!</h2>
-    <p>Explore seafood businesses and products on the interactive map.</p>
+    <h2>Reel in the Freshness</h2>
+    <p>Your Seafood Destination in the Caraga Region</p>
+
+    <div class="button-group">
+      <a href="signup.html">Sign Up</a>
+      <a href="login.html">Log In</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
   </main>
 
   <footer>
-    <p>&copy; 2025 ISEEFOOD. All rights reserved.</p>
+    <p>&copy; 2025 ISEEFOOD - Mapping the Bounty of Caraga</p>
   </footer>
+
 </body>
 </html>

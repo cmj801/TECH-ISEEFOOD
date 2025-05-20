@@ -1,40 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Sign Up - ISEEFOOD</title>
-  <link rel="stylesheet" href="style/style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #e0f7fa, #b2ebf2);
+      text-align: center;
+      padding: 50px;
+    }
+    .signup-box {
+      background-color: white;
+      border-radius: 12px;
+      max-width: 400px;
+      margin: auto;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    input, button {
+      width: 90%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background-color: #00796b;
+      color: white;
+      font-weight: bold;
+      border: none;
+    }
+    button:hover {
+      background-color: #004d40;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Sign Up</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="map.html">Map</a>
-      <a href="contact.html">Contact</a>
-      <a href="login.html">Login</a>
-    </nav>
-  </header>
 
-  <main>
-    <h2>Create Your Account</h2>
-    <form>
-      <label>Full Name:</label><br>
-      <input type="text" /><br><br>
+  <div class="signup-box">
+    <h2>Create an ISEEFOOD Account</h2>
+    <input type="text" placeholder="Full Name" />
+    <input type="email" placeholder="Email" />
+    <input type="password" placeholder="Password" />
+    <button onclick="handleSignup()">Sign Up</button>
+    <p>Already have an account? <a href="login.html">Log in</a>.</p>
+  </div>
 
-      <label>Email:</label><br>
-      <input type="email" /><br><br>
+  <script>
+    function handleSignup() {
+      // simulate signup
+      localStorage.setItem("loggedIn", "true");
+      window.location.href = "map.html";
+    }
+  </script>
 
-      <label>Password:</label><br>
-      <input type="password" /><br><br>
-
-      <button type="submit">Sign Up</button>
-    </form>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 ISEEFOOD</p>
-  </footer>
 </body>
 </html>
